@@ -1,0 +1,10 @@
+# 登录状态与个人数据, 切勿提交或分享 / login state & personal data: never commit or share
+_browser_profile/
+_manifest.jsonl
+_config.json
+download_log.txt
+_links.txt
+*.part
+Blackboard_Downloads/
+__pycache__/
+*.pyc

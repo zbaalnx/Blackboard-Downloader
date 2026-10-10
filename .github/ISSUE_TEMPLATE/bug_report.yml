@@ -1,0 +1,37 @@
+name: 问题反馈 / Bug report
+description: 下载失败、报错、行为异常 / Download failures, errors, unexpected behaviour
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **提交前请删除日志里的个人信息(用户名、学号、课程名、链接中的令牌)。**
+        **Remove personal information (username, student ID, course names, tokens in URLs) from logs before posting.**
+  - type: dropdown
+    id: edition
+    attributes:
+      label: 版本 / Edition
+      options:
+        - UCLan 专用版 / UCLan edition
+        - 通用版 / Generic edition
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python 版本与系统 / Python version & OS
+      placeholder: "Python 3.12, Windows 11"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 发生了什么 / What happened
+      description: 你运行的命令、期望的结果、实际结果 / The command you ran, what you expected, what happened
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: 报错日志 / Error log
+      render: text
